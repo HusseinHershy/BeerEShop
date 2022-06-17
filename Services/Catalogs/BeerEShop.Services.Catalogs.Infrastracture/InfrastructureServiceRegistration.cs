@@ -1,4 +1,6 @@
-﻿using BeerEShop.Services.Catalogs.Infrastracture.Persistance;
+﻿using BeerEShop.Services.Catalogs.Application.Contract.Persistance;
+using BeerEShop.Services.Catalogs.Infrastracture.Persistance;
+using BeerEShop.Services.Catalogs.Infrastracture.UOW;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,6 +20,7 @@ namespace BeerEShop.Services.Catalogs.Infrastracture
             services.AddDbContext<BeerCatalogContext>(options =>
             options.UseSqlServer(connectionString));
 
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
             return services;
         }
     }

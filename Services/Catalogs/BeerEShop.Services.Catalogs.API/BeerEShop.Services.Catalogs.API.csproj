@@ -18,10 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\BeerEShop.Services.Catalogs.Infrastracture\BeerEShop.Services.Catalogs.Infrastracture.csproj" />
   </ItemGroup>
 

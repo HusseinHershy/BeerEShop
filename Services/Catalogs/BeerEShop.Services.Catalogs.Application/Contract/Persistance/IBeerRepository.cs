@@ -28,5 +28,13 @@ namespace BeerEShop.Services.Catalogs.Application.Contract.Persistance
         /// <param name="beerId"> Beer Id</param>
         /// <returns>Product</returns>
          Task<bool> DeleteBeerById(long beerId);
+
+
+        /// <summary>
+        /// Create Beer
+        /// </summary>
+        /// <param name="brewery">Beer Object</param>
+        /// <returns>Beer</returns>
+        Task<Beer> CreateBeer(Beer beer);
     }
 }

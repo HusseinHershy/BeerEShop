@@ -18,6 +18,12 @@ namespace BeerEShop.Services.Catalogs.Infrastracture.Repositories
 
         }
 
+        public async Task<Beer> CreateBeer(Beer beer)
+        {
+            return await AddAsync(beer);
+
+        }
+
         public async Task<bool> DeleteBeerById(long beerId)
         {
             var Beer = await GetBeerById(beerId);

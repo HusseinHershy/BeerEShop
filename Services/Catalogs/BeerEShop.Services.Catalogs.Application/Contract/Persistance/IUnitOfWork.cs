@@ -8,7 +8,8 @@ namespace BeerEShop.Services.Catalogs.Application.Contract.Persistance
 {
     public interface IUnitOfWork : IDisposable
     {
-
+        IBeerRepository BeerRepository { get; }
+        IBreweryRepository BreweryRepository { get; }
         int Complete();
         Task<int> CompleteAsync();
 

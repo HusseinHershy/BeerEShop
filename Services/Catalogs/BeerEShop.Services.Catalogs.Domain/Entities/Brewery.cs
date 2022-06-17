@@ -1,6 +1,8 @@
-﻿namespace BeerEShop.Services.Catalogs.Domain.Entities
+﻿using BeerEShop.Services.Catalogs.Domain.Common;
+
+namespace BeerEShop.Services.Catalogs.Domain.Entities
 {
-    public class Brewery
+    public class Brewery : EntityBase
     {
         public Brewery(string name) 
         {

@@ -1,3 +1,4 @@
+using BeerEShop.Services.Catalogs.Application;
 using BeerEShop.Services.Catalogs.Infrastracture;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -28,6 +29,7 @@ namespace BeerEShop.Services.Catalogs.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddInfrastructureServices(Configuration);
+            services.AddApplicationServices();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
