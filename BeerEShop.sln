@@ -3,9 +3,50 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BeerEShop.Services", "BeerEShop.Services", "{DCAF3517-A305-4EC5-8EA3-FF3D20AF6270}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalogs", "Catalogs", "{B6894D7E-FD0B-4C28-81CD-AE8371B0F428}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerEShop.Services.Catalogs.Infrastracture", "Services\Catalogs\BeerEShop.Services.Catalogs.Infrastracture\BeerEShop.Services.Catalogs.Infrastracture.csproj", "{81CF1E84-E26F-4273-82A6-688A67ED65FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerEShop.Services.Catalogs.Domain", "Services\Catalogs\BeerEShop.Services.Catalogs.Domain\BeerEShop.Services.Catalogs.Domain.csproj", "{57528C67-8B54-4C09-8146-930ECA20313F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerEShop.Services.Catalogs.Application", "Services\Catalogs\BeerEShop.Services.Catalogs.Application\BeerEShop.Services.Catalogs.Application.csproj", "{062D3BF4-9594-4B2D-9CA9-95F74230B57E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerEShop.Services.Catalogs.API", "Services\Catalogs\BeerEShop.Services.Catalogs.API\BeerEShop.Services.Catalogs.API.csproj", "{A19FD15C-5121-4341-B784-6B5F56C5660F}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81CF1E84-E26F-4273-82A6-688A67ED65FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81CF1E84-E26F-4273-82A6-688A67ED65FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81CF1E84-E26F-4273-82A6-688A67ED65FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81CF1E84-E26F-4273-82A6-688A67ED65FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57528C67-8B54-4C09-8146-930ECA20313F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57528C67-8B54-4C09-8146-930ECA20313F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57528C67-8B54-4C09-8146-930ECA20313F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57528C67-8B54-4C09-8146-930ECA20313F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{062D3BF4-9594-4B2D-9CA9-95F74230B57E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{062D3BF4-9594-4B2D-9CA9-95F74230B57E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{062D3BF4-9594-4B2D-9CA9-95F74230B57E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{062D3BF4-9594-4B2D-9CA9-95F74230B57E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A19FD15C-5121-4341-B784-6B5F56C5660F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A19FD15C-5121-4341-B784-6B5F56C5660F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A19FD15C-5121-4341-B784-6B5F56C5660F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A19FD15C-5121-4341-B784-6B5F56C5660F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B6894D7E-FD0B-4C28-81CD-AE8371B0F428} = {DCAF3517-A305-4EC5-8EA3-FF3D20AF6270}
+		{81CF1E84-E26F-4273-82A6-688A67ED65FB} = {B6894D7E-FD0B-4C28-81CD-AE8371B0F428}
+		{57528C67-8B54-4C09-8146-930ECA20313F} = {B6894D7E-FD0B-4C28-81CD-AE8371B0F428}
+		{062D3BF4-9594-4B2D-9CA9-95F74230B57E} = {B6894D7E-FD0B-4C28-81CD-AE8371B0F428}
+		{A19FD15C-5121-4341-B784-6B5F56C5660F} = {B6894D7E-FD0B-4C28-81CD-AE8371B0F428}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F2C2AA5E-9ECF-4F74-BA83-595F0339DB43}
