@@ -7,13 +7,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BeerEShop.Services", "BeerE
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalogs", "Catalogs", "{B6894D7E-FD0B-4C28-81CD-AE8371B0F428}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerEShop.Services.Catalogs.Infrastracture", "Services\Catalogs\BeerEShop.Services.Catalogs.Infrastracture\BeerEShop.Services.Catalogs.Infrastracture.csproj", "{81CF1E84-E26F-4273-82A6-688A67ED65FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeerEShop.Services.Catalogs.Infrastracture", "Services\Catalogs\BeerEShop.Services.Catalogs.Infrastracture\BeerEShop.Services.Catalogs.Infrastracture.csproj", "{81CF1E84-E26F-4273-82A6-688A67ED65FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerEShop.Services.Catalogs.Domain", "Services\Catalogs\BeerEShop.Services.Catalogs.Domain\BeerEShop.Services.Catalogs.Domain.csproj", "{57528C67-8B54-4C09-8146-930ECA20313F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeerEShop.Services.Catalogs.Domain", "Services\Catalogs\BeerEShop.Services.Catalogs.Domain\BeerEShop.Services.Catalogs.Domain.csproj", "{57528C67-8B54-4C09-8146-930ECA20313F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerEShop.Services.Catalogs.Application", "Services\Catalogs\BeerEShop.Services.Catalogs.Application\BeerEShop.Services.Catalogs.Application.csproj", "{062D3BF4-9594-4B2D-9CA9-95F74230B57E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeerEShop.Services.Catalogs.Application", "Services\Catalogs\BeerEShop.Services.Catalogs.Application\BeerEShop.Services.Catalogs.Application.csproj", "{062D3BF4-9594-4B2D-9CA9-95F74230B57E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerEShop.Services.Catalogs.API", "Services\Catalogs\BeerEShop.Services.Catalogs.API\BeerEShop.Services.Catalogs.API.csproj", "{A19FD15C-5121-4341-B784-6B5F56C5660F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeerEShop.Services.Catalogs.API", "Services\Catalogs\BeerEShop.Services.Catalogs.API\BeerEShop.Services.Catalogs.API.csproj", "{A19FD15C-5121-4341-B784-6B5F56C5660F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A28E7E80-9186-4319-99B0-EA8A43F15504}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CatalogsTest", "CatalogsTest", "{8C8F1176-CBA8-4BFF-BE46-1EB65A26D16B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerEShop.Tests.Catalogs.UnitTest", "Tests\BeerEShop.Tests.Catalogs.UnitTest\BeerEShop.Tests.Catalogs.UnitTest.csproj", "{B169BCEB-FED9-46AE-BA7B-A6F9D5972118}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +43,10 @@ Global
 		{A19FD15C-5121-4341-B784-6B5F56C5660F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A19FD15C-5121-4341-B784-6B5F56C5660F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A19FD15C-5121-4341-B784-6B5F56C5660F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B169BCEB-FED9-46AE-BA7B-A6F9D5972118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B169BCEB-FED9-46AE-BA7B-A6F9D5972118}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B169BCEB-FED9-46AE-BA7B-A6F9D5972118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B169BCEB-FED9-46AE-BA7B-A6F9D5972118}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +57,8 @@ Global
 		{57528C67-8B54-4C09-8146-930ECA20313F} = {B6894D7E-FD0B-4C28-81CD-AE8371B0F428}
 		{062D3BF4-9594-4B2D-9CA9-95F74230B57E} = {B6894D7E-FD0B-4C28-81CD-AE8371B0F428}
 		{A19FD15C-5121-4341-B784-6B5F56C5660F} = {B6894D7E-FD0B-4C28-81CD-AE8371B0F428}
+		{8C8F1176-CBA8-4BFF-BE46-1EB65A26D16B} = {A28E7E80-9186-4319-99B0-EA8A43F15504}
+		{B169BCEB-FED9-46AE-BA7B-A6F9D5972118} = {8C8F1176-CBA8-4BFF-BE46-1EB65A26D16B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F2C2AA5E-9ECF-4F74-BA83-595F0339DB43}
