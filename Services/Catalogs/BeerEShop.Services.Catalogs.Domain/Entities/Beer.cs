@@ -25,7 +25,7 @@ namespace BeerEShop.Services.Catalogs.Domain.Entities
 
         public static Beer Create(
        Name name,
-       BeerStatus status,
+       //BeerStatus status,
        AlcoholContent alcoholContent,
        Volume volume,
        Price price,
@@ -38,7 +38,7 @@ namespace BeerEShop.Services.Catalogs.Domain.Entities
             beer.ChangeVolume(volume);
             beer.ChangePrice(price);
             beer.ChangeSellingPrice(sellingPrice);
-            beer.ChangeStatus(status);
+            beer.ChangeStatus(BeerStatus.Available);
             beer.ChangeBrewery(breweryId);
             beer.ChangeAlchoolContent(alcoholContent);
 

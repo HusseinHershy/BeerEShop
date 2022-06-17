@@ -40,10 +40,10 @@ namespace BeerEShop.Services.Catalogs.Infrastracture.Persistance
         {
             return new List<Beer>
                 {
-                    Beer.Create("Leffe Blonde",BeerStatus.Available,5.2m,100,115,130,1),
-                     Beer.Create("Imperial Enchanted Rain Rocket",BeerStatus.Available,6.6m,70,80,130,1),
-             Beer.Create("Double Enchanted Nugget Trip", BeerStatus.Available, 3.2m, 100, 30, 45, 2),
-             Beer.Create("Mosaic Dry Hopped Galactic Juice Daze", BeerStatus.Available, 7.2m, 50, 3, 7, 3)
+                    Beer.Create("Leffe Blonde",5.2m,100,115,130,1),
+                     Beer.Create("Imperial Enchanted Rain Rocket",6.6m,70,80,130,1),
+             Beer.Create("Double Enchanted Nugget Trip",  3.2m, 100, 30, 45, 2),
+             Beer.Create("Mosaic Dry Hopped Galactic Juice Daze", 7.2m, 50, 3, 7, 3)
             };
         }
         

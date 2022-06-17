@@ -17,10 +17,4 @@
     <ProjectReference Include="..\BeerEShop.Services.Catalogs.Domain\BeerEShop.Services.Catalogs.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Features\Beers\Commands\" />
-    <Folder Include="Features\Beers\Queries\GetBeer\" />
-    <Folder Include="Features\Beers\Queries\GetBeersList\" />
-  </ItemGroup>
-
 </Project>
