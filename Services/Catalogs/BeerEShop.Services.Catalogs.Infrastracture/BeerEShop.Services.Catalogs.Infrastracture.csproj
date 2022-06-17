@@ -16,4 +16,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BeerEShop.Services.Catalogs.Domain\BeerEShop.Services.Catalogs.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
