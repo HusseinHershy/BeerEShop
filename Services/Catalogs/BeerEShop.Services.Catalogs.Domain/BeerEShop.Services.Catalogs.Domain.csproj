@@ -8,4 +8,8 @@
     <PackageReference Include="Ardalis.GuardClauses" Version="4.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\EShop.Shared.Common\EShop.Shared.Common.csproj" />
+  </ItemGroup>
+
 </Project>

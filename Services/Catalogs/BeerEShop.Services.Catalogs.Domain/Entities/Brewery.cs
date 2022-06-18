@@ -1,4 +1,4 @@
-﻿using BeerEShop.Services.Catalogs.Domain.Common;
+﻿using EShop.Shared.Common.Models;
 
 namespace BeerEShop.Services.Catalogs.Domain.Entities
 {

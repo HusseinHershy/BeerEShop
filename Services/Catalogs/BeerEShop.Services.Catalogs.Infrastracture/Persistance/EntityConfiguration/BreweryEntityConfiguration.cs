@@ -1,5 +1,5 @@
-﻿using BeerEShop.Services.Catalogs.Domain.Common;
-using BeerEShop.Services.Catalogs.Domain.Entities;
+﻿using BeerEShop.Services.Catalogs.Domain.Entities;
+using EShop.Shared.Common.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;

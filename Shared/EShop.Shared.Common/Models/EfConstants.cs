@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BeerEShop.Services.Catalogs.Domain.Common
+namespace EShop.Shared.Common.Models
 {
     public static class EfConstants
     {

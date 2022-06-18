@@ -1,6 +1,6 @@
 ﻿using BeerEShop.Services.Catalogs.Application.Contract.Persistance;
-using BeerEShop.Services.Catalogs.Domain.Common;
 using BeerEShop.Services.Catalogs.Infrastracture.Persistance;
+using EShop.Shared.Common.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

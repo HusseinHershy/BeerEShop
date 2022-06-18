@@ -1,5 +1,4 @@
-﻿using BeerEShop.Services.Catalogs.Domain.Common;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,6 +6,7 @@ using System.Threading.Tasks;
 using BeerEShop.Services.Catalogs.Domain.ValueObjects;
 using Ardalis.GuardClauses;
 using BeerEShop.Services.Catalogs.Domain.Exception;
+using EShop.Shared.Common.Models;
 
 namespace BeerEShop.Services.Catalogs.Domain.Entities
 {

@@ -1,4 +1,4 @@
-﻿using BeerEShop.Services.Catalogs.Domain.Common;
+﻿using EShop.Shared.Common.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
