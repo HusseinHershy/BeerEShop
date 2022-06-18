@@ -30,10 +30,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\..\Shared\EShop.Shared.Common\EShop.Shared.Common.csproj" />
     <ProjectReference Include="..\..\..\Shared\EShop.Shared.EventBus.Messages\EShop.Shared.EventBus.Messages.csproj" />
   </ItemGroup>
