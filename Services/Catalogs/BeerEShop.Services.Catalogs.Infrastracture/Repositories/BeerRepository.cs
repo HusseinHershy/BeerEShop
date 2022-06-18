@@ -44,7 +44,7 @@ namespace BeerEShop.Services.Catalogs.Infrastracture.Repositories
 
         public async Task<IEnumerable<Beer>> GetBeers(long BreweryId)
         {
-            var Beers = await _dbContext.Beers.Where(p => p.BreweryId == BreweryId)
+            var Beers = await _dbContext.Beers.Where(p => p.BreweryId == BreweryId && p.BeerStatus == BeerStatus.Available)
                               .Include("Brewery")
                                .ToListAsync();
             return Beers;

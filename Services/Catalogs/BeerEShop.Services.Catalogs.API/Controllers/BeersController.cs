@@ -3,6 +3,7 @@ using BeerEShop.Services.Catalogs.Application.Features.Beers;
 using BeerEShop.Services.Catalogs.Application.Features.Beers.Queries.GetBeer;
 using BeerEShop.Services.Catalogs.Application.Features.Beers.Queries.GetBeersList;
 using BeerEShop.Services.Catalogs.Application.Features.Breweries.Commands.CreateBeer;
+using BeerEShop.Services.Catalogs.Application.Features.Breweries.Commands.DeleteBeer;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -47,6 +48,15 @@ namespace BeerEShop.Services.Catalogs.API.Controllers
         [HttpPost(Name = "CreateBeer")]
         [ProducesDefaultResponseType]
         public async Task<ActionResult> CreateBeer([FromBody] CreateBeerCommand command)
+        {
+            var Beer = await _mediator.Send(command);
+            return Ok(Beer);
+        }
+
+
+        [HttpDelete(Name = "DeleteBeer")]
+        [ProducesDefaultResponseType]
+        public async Task<ActionResult> DeleteBeer([FromBody] DeleteBeerCommand command)
         {
             var Beer = await _mediator.Send(command);
             return Ok(Beer);
