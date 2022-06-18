@@ -9,6 +9,7 @@ namespace BeerEShop.Services.Catalogs.Application.Features
 {
     public class BeerVM
     {
+        public long BeerId { get; set; }
         public string Name { get; set; }
         public decimal AlcoholContent { get; set; }
         public decimal Price { get; set; }

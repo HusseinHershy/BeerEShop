@@ -1,0 +1,53 @@
+{
+  "Routes": [
+    //Beer API
+    {
+      "DownstreamPathTemplate": "/api/V1/Beers/CreateBeer",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5001"
+        }
+      ],
+      "UpstreamPathTemplate": "/v1/CreateBeer",
+      "UpstreamHttpMethod": [ "POST" ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/V1/Beers/GetBeers/{BreweryId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5001"
+        }
+      ],
+      "UpstreamPathTemplate": "/v1/Beers/{BreweryId}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "3s",
+        "PeriodTimespan": 5,
+        "Limit": 1
+      },
+      "FileCacheOptions": { "TtlSeconds": 1 }
+    },
+    {
+      "DownstreamPathTemplate": "/api/V1/Beers/GetBeerById/{BeerId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5001"
+        }
+      ],
+      "UpstreamPathTemplate": "/v1/Beer/{BeerId}",
+      "UpstreamHttpMethod": [ "GET" ]
+
+    }
+  ],
+  "GlobalConfiguration": {
+  }
+}

@@ -30,6 +30,7 @@ namespace BeerEShop.Services.Catalogs.Application.Mapping
             #endregion
             #region Beer 
             CreateMap<Beer, BeerVM>().ReverseMap()
+                         .ForMember(dest => dest.BeerId, opt => opt.MapFrom(src => src.BeerId))
                          .ForMember(dest => dest.Volume, opt => opt.MapFrom(src => src.Volume))
                          .ForMember(dest => dest.Price, opt => opt.MapFrom(src => src.Price))
                          .ForMember(dest => dest.AlcoholContent, opt => opt.MapFrom(src => src.AlcoholContent))

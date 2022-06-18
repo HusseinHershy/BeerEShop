@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace BeerEShop.Services.Catalogs.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/V1/[controller]/[action]")]
     [ApiController]
     public class OrderController : ControllerBase
     {
