@@ -36,9 +36,7 @@ namespace BeerEShop.Services.Wholesalers.API.Data.Entities.Mapping
              .HasColumnType(EfConstants.ColumnTypes.RegularDecimal)
              .HasColumnName("Quantity");
 
-          //  builder.HasOne<Wholesaler>(x => x.Wholesaler)
-          //.WithMany(x=>x.Inventories)
-          //.HasForeignKey(x => x.WholesalerId);
+
 
          
         }
