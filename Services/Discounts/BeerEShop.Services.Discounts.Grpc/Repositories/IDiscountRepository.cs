@@ -8,6 +8,6 @@ namespace BeerEShop.Services.Discounts.Grpc.Repositories
 {
     public interface IDiscountRepository
     {
-        Task<PurchaseDetails> GetDiscount(string productName);
+        Task<PurchaseResponse> GetDiscount(PurchaseDetails purchaseDetails);
     }
 }

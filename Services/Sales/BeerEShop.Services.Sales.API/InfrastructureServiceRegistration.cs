@@ -1,4 +1,5 @@
-﻿using BeerEShop.Services.Wholesalers.API.Data;
+﻿using BeerEShop.Services.Sales.API.Repositories;
+using BeerEShop.Services.Wholesalers.API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -16,8 +17,9 @@ namespace BeerEShop.Services.Sales.API
             string connectionString = configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<SaleDbContext>(options =>
             options.UseSqlServer(connectionString));
+            services.AddScoped<ISaleRepository, SaleRepository>();
 
-           
+
             return services;
         }
     }

@@ -1,4 +1,5 @@
-﻿using BeerEShop.Services.Wholesalers.API.Features.Orders.Commands.UpdateInventory;
+﻿using BeerEShop.Services.Wholesalers.API.Features.Orders.Commands.CheckAvailabilty;
+using BeerEShop.Services.Wholesalers.API.Features.Orders.Commands.UpdateInventory;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -26,6 +27,14 @@ namespace BeerEShop.Services.Wholesalers.API.Controllers
         public async Task<ActionResult> UpdateStock([FromBody] UpdateInventoryCommand command)
         {
             var Brewery = await _mediator.Send(command);
+            return Ok(Brewery);
+        }
+
+        [HttpGet(Name = "CheckStock")]
+        [ProducesDefaultResponseType]
+        public async Task<ActionResult> CheckStock([FromBody] CheckAvailableQuery query)
+        {
+            var Brewery = await _mediator.Send(query);
             return Ok(Brewery);
         }
     }
