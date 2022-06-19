@@ -14,6 +14,8 @@ namespace BeerEShop.Services.Sales.API.Mapping
 		{
 			CreateMap<SaleOrder, CreateSaleOrderCommand>().ReverseMap()
 				 .ForMember(dest => dest.SaleOrderItems, opt => opt.MapFrom(src => src.orderItems))
+				 .ForMember(dest => dest.CustomerId, opt => opt.MapFrom(src => src.CustomerId))
+				 .ForMember(dest => dest.WholesalerId, opt => opt.MapFrom(src => src.WholesalerId))
 				.ForMember(dest => dest.WholesalerId, opt => opt.MapFrom(src => src.WholesalerId));
 			
 			CreateMap<SaleOrderItem, CreateOrderItem>().ReverseMap()

@@ -8,6 +8,9 @@ namespace BeerEShop.Services.Sales.API.ModelsDTO
     public class SaleOrder
     {
         public long WholesalerId { get; set; }
+        public long CustomerId { get; set; }
+        public long Discount { get; set; }
+       
         public List<SaleOrderItem> SaleOrderItems { get; set; }
     }
     public class SaleOrderItem

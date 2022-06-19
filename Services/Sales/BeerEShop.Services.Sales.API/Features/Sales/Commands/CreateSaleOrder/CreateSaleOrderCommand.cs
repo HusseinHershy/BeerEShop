@@ -9,6 +9,7 @@ namespace BeerEShop.Services.Wholesalers.API.Features.Orders.Commands.CreateOrde
     public class CreateSaleOrderCommand : IRequest<bool>
     {
         public long WholesalerId { get; set; }
+        public long CustomerId { get; set; }
         public List<CreateOrderItem> orderItems { get; set; }
     }
     public class CreateOrderItem

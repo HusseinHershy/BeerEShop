@@ -1,3 +1,6 @@
+using BeerEShop.Services.Discounts.Grpc.Protos;
+using BeerEShop.Services.Sales.API.Extensions;
+using BeerEShop.Services.Sales.API.GrpcServices;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -31,6 +34,12 @@ namespace BeerEShop.Services.Sales.API
             services.AddInfrastructureServices(Configuration);
            services.AddMediatR(Assembly.GetExecutingAssembly());
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
+
+            /// Grpc Configuration
+            services.AddGrpcClient<DiscountProtoService.DiscountProtoServiceClient>
+                        (o => o.Address = new Uri(Configuration["GrpcSettings:DiscountUrl"]));
+            services.AddScoped<DiscountGrpcService>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

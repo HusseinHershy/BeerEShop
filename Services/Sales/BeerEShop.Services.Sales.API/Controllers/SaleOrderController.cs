@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using BeerEShop.Services.Discounts.Grpc.Protos;
+using BeerEShop.Services.Sales.API.GrpcServices;
 using BeerEShop.Services.Wholesalers.API.Features.Orders.Commands.CreateOrder;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -17,8 +19,7 @@ namespace BeerEShop.Services.Catalogs.API.Controllers
     {
 
         private readonly IMediator _mediator;
-
-        public SaleOrderController(IMediator mediator)
+        public SaleOrderController(IMediator mediator, DiscountGrpcService discountGrpcService)
         {
             _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
         }
@@ -29,6 +30,8 @@ namespace BeerEShop.Services.Catalogs.API.Controllers
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         public async Task<IActionResult> CreateSaleOrder([FromBody] CreateSaleOrderCommand SaleOrderCommand)
         {
+
+       
             var result = await _mediator.Send(SaleOrderCommand);
             return Ok(result);
         }
